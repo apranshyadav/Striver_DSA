@@ -27,7 +27,7 @@ public class second_largest_element {
         //}
 
 
-        // Optimal 
+        /*  Better 
         int largest = arr[0];
         for(int i=1;i<n;i++){
             largest = Math.max(largest,arr[i]);
@@ -40,6 +40,18 @@ public class second_largest_element {
             }
         }
 
+        return slargest;
+        */
+
+        //Optimal
+        int largest = arr[0];
+        int slargest = -1;
+        for(int i=1; i<n;i++){
+            if(arr[i]>largest){
+                slargest=largest;
+                largest = arr[i];
+            }
+        }
         return slargest;
     }
 }
