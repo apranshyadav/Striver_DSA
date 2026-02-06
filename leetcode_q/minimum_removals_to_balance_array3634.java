@@ -3,6 +3,7 @@ package leetcode_q;
 import java.util.Arrays;
 
 class Solution {
+    
     public int minRemoval(int[] nums, int k) {
         Arrays.sort(nums);
         int i = 0;
@@ -12,7 +13,7 @@ class Solution {
             while ((long) nums[j] > (long) nums[i] * k) {
                 i++;
             }
-            
+
             maxLen = Math.max(maxLen, j - i + 1);
         }
 
