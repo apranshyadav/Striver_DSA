@@ -1,9 +1,8 @@
 package leetcode_q;
 
 import java.util.Arrays;
-
 class Solution {
-    
+
     public int minRemoval(int[] nums, int k) {
         Arrays.sort(nums);
         int i = 0;
