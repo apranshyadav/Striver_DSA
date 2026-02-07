@@ -13,7 +13,7 @@ class Solution {
                 i++;
             }
 
-            maxLen = Math.max(maxLen, j - i +  1);
+            maxLen = Math.max(maxLen, j - i + 1);
         }
 
         return nums.length - maxLen;
