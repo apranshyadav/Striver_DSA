@@ -23,12 +23,12 @@ public class max_consecutive_1s {
             
             if(arr[i]==1){
                 cnt++;
+                maxcount = Math.max(cnt,maxcount);
+                
             }
             else if(arr[i]==0){
-                maxcount = Math.max(cnt,maxcount);
                 cnt = 0;
             }
-            maxcount = Math.max(maxcount, cnt);
         }
 
         return maxcount;
