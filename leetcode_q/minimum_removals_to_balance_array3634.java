@@ -12,11 +12,10 @@ class Solution {
             while ((long) nums[j] > (long) nums[i] * k) {
                 i++;
             }
-
             maxLen = Math.max(maxLen, j - i + 1); 
         }
 
-        return nums.length - maxLen; 
+        return nums.length - maxLen;  
     }
 }
 
