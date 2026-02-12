@@ -16,7 +16,7 @@ class Solution {
         }
 
 
-        return nums.length - maxLen;   
+        return nums.length - maxLen;  
     }
 }
 
