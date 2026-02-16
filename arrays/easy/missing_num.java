@@ -16,7 +16,7 @@ public class missing_num {
     }
 
     public static int missing_number(int[] arr){
-        int n = arr.length;
+        int n = arr.length; 
         for(int i=1;i<=n; i++){
             boolean found = false;
             for(int j=0; j<n; j++){
